@@ -4,11 +4,11 @@ const routes = require("./routes");
 
 const app = express();
 
+mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb+srv://warleyhenrique:warleyhenrique@cluster0-nf5ir.gcp.mongodb.net/week10?retryWrites=true&w=majority',{
     useNewUrlParser: true, 
     useUnifiedTopology: true,
 })
-
 
 
 app.use(express.json());
