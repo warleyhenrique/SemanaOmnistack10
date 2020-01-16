@@ -46,4 +46,7 @@ module.exports = {
         const dev = await Dev.findOne({github_username: request.params.github_username});
         return response.json(dev);
     },
+
+  
+
 };
