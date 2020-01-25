@@ -23,7 +23,7 @@ module.exports = {
 
             const { name = login, avatar_url, bio } = apiResponse.data;
 
-            const techsArray = parseStringAsArray(techs);
+            const techsArray = parseStringAsArray(techs.toLocaleLowerCase());
 
             const location = {
                 type: 'Point',
